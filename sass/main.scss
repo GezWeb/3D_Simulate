@@ -1,0 +1,50 @@
+// base
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/helpers";
+
+@import "helpers/funciones";
+
+
+@import "base/reset";
+@import "base/typhography";
+
+// helpers
+
+
+
+
+// components
+@import "components/buttons";
+@import "components/carousel";
+@import "components/menu";
+@import "components/navigation";
+@import "components/colors";
+@import "components/modal";
+@import "components/show-many-carousel";
+@import "components/tables";
+
+
+// ...
+
+//layout
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/noticia";
+
+//pages
+@import "pages/home";
+@import "pages/interior";
+@import "pages/contacto";
+@import "pages/pendiente";
+@import "pages/ubicacion";
+@import "pages/impresion";
+@import "pages/login";
+
+
+//vendors
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";

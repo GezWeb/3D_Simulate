@@ -1,0 +1,74 @@
+.min-h-250{
+	min-height: 250px;
+}
+.p0{
+	padding: 0px !important;
+}
+.centrado-absoluto{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+.x-edit{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	font-size: 18px;
+	color: #737373;
+	&:hover,&:focus{
+		cursor:pointer;
+	}
+}
+.btn-round{
+	font-size: 12px;
+	border-radius: 50%;
+	padding: 6px !important;
+}
+.separe{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #e3e3e3;
+	margin-bottom: 20px;
+	&.p0{
+		padding: 0 !important;
+		margin-bottom: 30px;
+		margin-top: 15px;
+	}
+	span{
+		font-size: 20px;
+		color: #2266af;
+	}
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.mb-res{
+	@include phone-full{
+		margin-bottom: 26px;
+	}
+}
+.po-r{
+	position: relative;
+}
+.btn-rounded{
+	padding: 6px !important;
+	border-radius: 50% !important;
+}
+.separe-left{
+	padding-left: 150px;
+	@include phone(){
+		padding-left: 60px;
+	}
+}
+.truncate {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

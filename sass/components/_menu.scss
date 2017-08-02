@@ -1,0 +1,12 @@
+.action-menu{
+	position: relative;
+	float: right;
+	margin: 0;
+	@include phone-full{
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 20px 0 10px !important;
+		border-top: solid 1px #cdcdcd;
+	}
+}

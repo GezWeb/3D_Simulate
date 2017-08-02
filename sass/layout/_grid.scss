@@ -1,0 +1,52 @@
+.panel-heading{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	background: #e9e9e9;
+}
+
+.main-panel > .content {
+	padding: 10px 0 !important;
+}
+.wrap-total{
+	padding: 0 15px;
+}
+.element{
+	height: 38px;
+	position: relative;
+	padding-right: 90px;
+	padding-top: 11px;
+	border-bottom: solid 1px #d0d0d0;
+	margin-bottom: 10px;
+	overflow: hidden;
+	.wrap-text{
+		span{
+			@extend .truncate;
+		}
+		padding-right: 90px;
+		@include phone(){
+			padding-right: 0;
+
+		}
+	}
+	.wrap-actions{
+		width: 80px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 40px;
+		.btn{
+			margin-left: 6px;
+		}
+	}
+}
+.content{
+	.form-group{
+		margin-bottom: 26px;
+	}
+	label.col-sm-10{
+		text-align: left !important;
+		margin-bottom: 4px;
+		// font-size: 14px;
+	}
+}

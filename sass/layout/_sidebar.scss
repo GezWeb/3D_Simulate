@@ -1,0 +1,40 @@
+.sidebar .nav li .dropdown a{
+  color: #FFFFFF;
+  margin: 5px 15px;
+  opacity: .86;
+  border-radius: 4px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+  &:hover,&:focus,&:active{
+    color: #FFFFFF;
+    opacity: 1;
+    cursor:pointer;
+    background: rgba(255, 255, 255, 0.23);
+  }
+  .caret{
+    top: 10px;
+  }
+
+}
+.sidebar{
+  .logo{
+    img{height: 50px;}
+  }
+  .active{
+    .dropdown a{
+      color: #FFFFFF;
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.23);
+    }
+  }
+  .dropdown-menu{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none;
+    left: 40px;
+    li{
+
+    }
+  }
+}

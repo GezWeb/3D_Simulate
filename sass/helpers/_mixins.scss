@@ -1,0 +1,59 @@
+@mixin phone() {
+	@media (max-width: #{$phone-width - 1}){
+		@content;
+	}
+}
+@mixin phone-land() {
+	@media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1}){
+		@content;
+	}
+}
+@mixin phone-full() {
+	@media(max-width: #{$tablet-width - 1}){
+		@content;
+	}
+}
+@mixin not-phone-full() {
+	@media(min-width: #{$tablet-width}){
+		@content;
+	}
+}
+@mixin tablet() {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$notebook-width - 1}) and (orientation: portrait) {
+		@content;
+	}
+}
+@mixin tablet-land() {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$notebook-width - 1}) and (orientation: landscape) {
+		@content;
+	}
+}
+@mixin tablet-full() {
+	@media (max-width: #{$notebook-width - 1}){
+		@content;
+	}
+}
+@mixin notebook() {
+	@media (min-width: #{$notebook-width}) and (max-width: #{$desktop-width - 1}) {
+		@content;
+	}
+}
+@mixin desktop() {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+@mixin width-calcule($cantidad){
+	width: (100%/$cantidad);
+}
+@mixin hover-rever($primary,$second){
+	&:hover,&:focus{
+		background: $second !important;
+		color: $primary !important;
+		transition: all .3s;
+		-webkit-transition: all .3s;
+		i{
+			color: $primary !important;
+		}
+	}
+}

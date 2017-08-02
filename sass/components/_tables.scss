@@ -1,0 +1,70 @@
+.titulo-contenido{
+	@include phone-full{
+		h2{
+			padding-bottom: 10px;
+		}
+	}
+}
+.td_acciones{
+	@include not-phone-full{
+		min-width: 132px;
+	}
+}
+.tables-width{
+	@include not-phone-full{
+		width: 100%;
+		.first{
+			width: 10%;
+			min-width: 90px;
+		}
+		.second{
+			width:75%;
+			max-width: 200px;
+		}
+		.third{
+			width: 5%;
+			min-width: 70px;
+		}
+		.fourth{
+			width:10%;
+			min-width: 135px;
+		}
+	}
+	@include phone-full{
+		width: 100%;
+		.first{
+			width: 10%;
+			min-width: 90px;
+		}
+		.second{
+			max-width: 300px;
+			min-width: 300px;
+			width: 75%;
+		}
+		.third{
+			width: 100%;
+			min-width: 90px;
+			display: block;
+		}
+		.fourth{
+			min-width: 135px;
+		}
+	}
+}
+.tb--high-lighted{
+	background: #ebebca;
+	transition: background 0.2s;
+	&:focus,&:hover{
+		cursor: pointer;
+		background: #fff;
+	}
+}
+.max-l-title{
+	@include phone-full{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		display: block;
+		max-width: 100%;
+	}
+}
